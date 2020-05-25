@@ -1,0 +1,8 @@
+.metadata
+*/ProvarANT/*
+!*/ProvarANT/build.xml
+*/bin/*
+*/*.pdf
+.provarCaches
+.testcycles
+*/ANT/Result*
