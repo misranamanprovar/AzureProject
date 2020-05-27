@@ -1,9 +1,9 @@
 <project default="runtests">
 	<property environment="env"/>
-	<property name="provar.home" value=""/>
+	<property name="provar.home" value="${env.PROVAR_HOME}"/>
 	<property name="testproject.home" value="AzureProject"/>
 	<property name="testproject.results" value="AzureProject/ANT/Results"/>
-	<property name="secrets.password" value=""/>
+	<property name="secrets.password" value="${env.AZURE_PWD}"/>
 	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
 	
 	
