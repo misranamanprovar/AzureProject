@@ -3,9 +3,6 @@
 	<property name="provar.home" value="${env.PROVAR_HOME}"/>
 	<property name="testproject.home" value="AzureProject"/>
 	<property name="testproject.results" value="AzureProject/ANT/Results"/>
-	<property name="secrets.password" value="${env.pswd}"/>
-	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
-	
 	
 	<taskdef name="Provar-Compile" classname="com.provar.testrunner.ant.CompileTask" classpath="${provar.home}/ant/ant-provar.jar"/>
 	<taskdef name="Run-Test-Case" classname="com.provar.testrunner.ant.RunnerTask" classpath="${provar.home}/ant/ant-provar.jar;${provar.home}/ant/ant-provar-bundled.jar;${provar.home}/ant/ant-provar-sf.jar"/>
