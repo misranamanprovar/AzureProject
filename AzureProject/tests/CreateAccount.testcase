@@ -74,7 +74,7 @@
       <clauses>
         <clause name="substeps" testItemId="3">
           <steps>
-            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" name="UiWithRow" testItemId="4" title="With ObjectHome/recent/recentTable {1}">
+            <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithRow" name="UiWithRow" testItemId="4" title="With Account rows {1}">
               <arguments>
                 <argument id="uiConnectionName">
                   <value class="value" valueClass="string">AdminTraining</value>
@@ -86,7 +86,7 @@
                   <value class="value" valueClass="decimal">1</value>
                 </argument>
                 <argument id="locatorDescription">
-                  <value class="value" valueClass="string">With ObjectHome/recent/recentTable {1}</value>
+                  <value class="value" valueClass="string">With Account rows {1}</value>
                 </argument>
                 <argument id="failIfNotFound">
                   <value class="value" valueClass="boolean">true</value>
@@ -97,6 +97,9 @@
                 </argument>
                 <argument id="resultScope">
                   <value class="value" valueClass="string">Local</value>
+                </argument>
+                <argument id="autoPaginate">
+                  <value class="value" valueClass="boolean">false</value>
                 </argument>
               </arguments>
               <clauses>
@@ -129,12 +132,26 @@
                           <value class="value" valueClass="string">Click the Account Name field</value>
                         </argument>
                         <argument id="autoRetry"/>
+                        <argument id="ieClickMethod">
+                          <value class="value" valueClass="string">Default</value>
+                        </argument>
                       </arguments>
                       <generatedParameters>
-                        <apiParam group="value" name="hover" title="Hover before Clicking">
+                        <apiParam group="value" name="hover" seq="10000" title="Hover before Clicking">
                           <summary>Whether the mouse should hover over the field before it is clicked.</summary>
                           <type>
                             <booleanType/>
+                          </type>
+                        </apiParam>
+                        <apiParam group="value" name="ieClickMethod" seq="10001" title="IE Click Method">
+                          <summary>How the click should be executed for Internet Explorer.</summary>
+                          <type>
+                            <choiceType>
+                              <constraints>
+                                <valueConstraint name="valuesSource">com.provar.core.model.base.java.EnumChoiceListValuesSource</valueConstraint>
+                                <valueConstraint name="valuesSourceDependencies">com.provar.core.model.ui.api.ClickMethod</valueConstraint>
+                              </constraints>
+                            </choiceType>
                           </type>
                         </apiParam>
                       </generatedParameters>
@@ -142,6 +159,15 @@
                   </steps>
                 </clause>
               </clauses>
+              <generatedParameters>
+                <apiParam group="options" name="autoPaginate" title="Auto Paginate">
+                  <summary>Whether Show More/Next is clicked till the match condition succeeds.</summary>
+                  <defaultValue>false</defaultValue>
+                  <type>
+                    <booleanType/>
+                  </type>
+                </apiParam>
+              </generatedParameters>
             </apiCall>
           </steps>
         </clause>
