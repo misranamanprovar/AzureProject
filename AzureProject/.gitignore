@@ -6,3 +6,6 @@
 .provarCaches
 .testcycles
 */ANT/Result*
+!TestCycle/*.txt
+TestCycle/*
+
