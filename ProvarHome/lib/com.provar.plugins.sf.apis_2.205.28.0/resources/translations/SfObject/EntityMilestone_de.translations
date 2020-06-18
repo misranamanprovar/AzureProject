@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<translations>
-  <translation key="EntityMilestone.Id" type="SfFieldLabel" value="Objektmeilenstein-ID"/>
-  <translation key="EntityMilestone.Name" type="SfFieldLabel" value="Objektmeilensteinname"/>
-</translations>

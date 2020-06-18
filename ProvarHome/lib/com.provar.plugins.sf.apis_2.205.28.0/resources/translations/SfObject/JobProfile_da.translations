@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<translations>
-  <translation key="JobProfile.Id" type="SfFieldLabel" value="Id for jobprofil"/>
-  <translation key="JobProfile.Name" type="SfFieldLabel" value="Jobprofilnavn"/>
-</translations>

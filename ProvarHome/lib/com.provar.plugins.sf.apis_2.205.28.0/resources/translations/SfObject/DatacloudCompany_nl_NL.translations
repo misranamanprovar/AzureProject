@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<translations>
-  <translation key="DatacloudCompany.CompanyId" type="SfFieldLabel" value="Data.com-bedrijfs-ID"/>
-  <translation key="DatacloudCompany.ExternalId" type="SfFieldLabel" value="Data.com-bedrijfs-ID"/>
-</translations>

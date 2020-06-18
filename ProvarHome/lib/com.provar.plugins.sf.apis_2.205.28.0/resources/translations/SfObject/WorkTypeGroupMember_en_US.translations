@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<translations>
-  <translation key="WorkTypeGroupMember.Id" type="SfFieldLabel" value="Work Type Group Member ID"/>
-  <translation key="WorkTypeGroupMember.Name" type="SfFieldLabel" value="Work Type Group Member Name"/>
-</translations>
